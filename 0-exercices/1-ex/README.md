@@ -18,7 +18,7 @@
 
 Vous trouverez ci-après des exemples de cas d'utilisation à travers les scénarios ci-dessous.
 
-Pour visualiser le travail attendu, vous pouvez vous appuyer sur la [vidéo](../ressources/videos/app-1.mp4) de la présentation de la réalisation finale de tous les exercices.
+Pour visualiser le travail attendu, vous pouvez vous appuyer sur la [vidéo](../ressources/videos/sign-in.mp4) de la présentation de la réalisation finale de tous les exercices.
 
 ### Scénarios
 

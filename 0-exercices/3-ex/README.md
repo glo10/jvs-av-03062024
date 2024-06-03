@@ -8,3 +8,7 @@ Pour rappels :
 - Le message d'aide disparait lors de la perte du focus sur un champ
 - Lors de la soumission, si un champ n'est pas rempli (hors sélection du pays et de la ville qui seront traités prochainement), le message d'aide associé au champ apparait au dessus du bouton de validation.
 - Lors de la soumission, lorsque tout est rempli, aucun message apparait
+
+## Illustration vidéo
+
+- [Vidéo à télécharger](../ressources/videos/sign-up.mp4)
