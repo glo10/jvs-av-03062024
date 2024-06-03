@@ -18,8 +18,9 @@ inputText.addEventListener('keypress', function (event) {
   // avec la notation classique d'une fonction function(event) {} this contient l'élément qui a déclenché l'événement
   console.log('this', this, 'target', event.target)
   let p = document.querySelector('#paragraph')
-  // Création du p s'il n'existe pas déjà mais pas encore ajouté au DOM
+  // Création du p s'il n'existe pas déjà dans le DOM
   if (p === null) {
+    // il est crée mais pas encore ajouté au DOM
     p = document.createElement('p')
     p.id = 'paragraph'
     /**
@@ -28,7 +29,7 @@ inputText.addEventListener('keypress', function (event) {
     */
   }
   const letter = event.key
-  // écrir les caractères tapés dans le paragraphe
+  // écrire les caractères tapés dans le paragraphe
   p.innerHTML += letter // += prendre ce qui avait avant et ajouter le contenu après le =
   // Ajouter le p au DOM
   inputText.parentElement.prepend(p)

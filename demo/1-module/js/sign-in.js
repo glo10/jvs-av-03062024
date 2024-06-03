@@ -1,10 +1,6 @@
-class SignIn {
-  /**
-   * Constructeur appelé lors de la création d'un objet à l'aide de l'opérateur new SignIn
-   * @returns void
-   */
+export default class SignIn {
   constructor () {
-    this.inputs = [ // Nos inputs elements dans le DOM + message d'aide
+    this.inputs = [
       {
         selector: 'input[type=email]',
         msg: 'Veuillez saisir votre adresse e-mail !'
@@ -69,7 +65,7 @@ class SignIn {
         var alertUser = el.parentElement.querySelector('.alert.alert-danger')
         var isEmpty = false
         const inputEl = document.querySelector(elts[i].selector)
-        if (inputEl.value.length === 0) { // champ vide
+        if (inputEl.value.length === 0) {
           isEmpty = true
           if (alertUser === null) {
             const p = document.createElement('p')
@@ -88,14 +84,3 @@ class SignIn {
     })
   }
 }
-// --- EXECUTION
-// Lors du chargement de la page
-window.onload = () => { // idem window.addEventListener('load', () => {})
-  const signIn = new SignIn()
-  signIn.events()
-}
-
-// window.addEventListener('load', () => {
-//   const signIn = new SignIn()
-//   signIn.events()
-// })

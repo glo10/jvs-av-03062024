@@ -12,4 +12,4 @@ Voici les réponses à choisir durant la configuration
 - Where does your project run ? "Browser"
 - Would you like to install them now ? "yes"
 - Which package manager do you want to use ? "npm"
-3. Transformez le script de l'exercice 1 en module en ayant au moins 2 fichiers js distinctes.
+3. Transformez le script de l'exercice 1 en module en ayant au moins 2 fichiers js distincts.

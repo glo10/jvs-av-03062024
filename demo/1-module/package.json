@@ -1,0 +1,17 @@
+{
+  "name": "m2iformation-module",
+  "version": "1.0.0",
+  "description": "demo module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "module"
+  ],
+  "author": "Glodie Tshimini <contact@tshimini.fr>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
