@@ -1,4 +1,4 @@
-# Exercice 1 : gestion des événements sur le formulaire de connexion avec un CustomElement
+# Exercice 1 : gestion des événements sur le formulaire de connexion
 ---
 
 ## Modalités
@@ -7,18 +7,18 @@
 - **Dans la page index.html fournit, vous devez uniquement insérer le lien vers votre script JavaScript à l'aide de la balise `<script>` comme vous avez l'habitude de faire**.
 - **Toutes les modifications doivent se faire à travers JavaScript**.
 - **Lancer votre code à l'aide de l'extension live server de Visual Studio Code**
-- Récupérez depuis le dossiers ressources le zip [src.zip](../ressources/src.zip) contenant les pages HTML et des feuilles de style CSS nécessaires à la réalisation de l'exercice.
+- Récupérez depuis le dossier ressources le zip [src.zip](../ressources/src.zip) contenant les pages HTML et des feuilles de style CSS nécessaires à la réalisation de l'exercice.
 
 ---
 
 ## Enoncé
 
-1. Depuis le fichier ***index.html***, affichez un message d'aide par l'intermédiaire de l'utilisation du paragraphe  HTML ayant la classe CSS `form-help` déjà présent dans le contenu de la page HTML de connexion. Ce message apparait lorsqu'il y a l'événement *focus ou input* sur le champ de saisie afin d'aider l'utilisateur à remplir correctement l'information attendu. 
-2. Lorsque l'utilisateur n'a plus le focus sur ce champ(événement *blur*), le message doit être caché ou supprimé de la page.
+1. Depuis le fichier ***index.html***, affichez un message d'aide par l'intermédiaire de l'utilisation du paragraphe  HTML ayant la classe CSS `form-help` déjà présent dans le contenu de la page HTML de connexion. Ce message apparait lorsqu'il y a l'événement *focus ou input* sur le champ de saisie afin d'aider l'utilisateur à remplir correctement l'information attendue. 
+2. Lorsque l'utilisateur n'a plus le focus sur ce champ (événement *blur*), le message doit être caché ou supprimé de la page.
 
 Vous trouverez ci-après des exemples de cas d'utilisation à travers les scénarios ci-dessous.
 
-Pour visualiser le travail attendu, vous pouvez vous appuyez sur la [vidéo](../ressources/videos/app-1.mp4) de la présentation de la réalisation finale de tous les exercices.
+Pour visualiser le travail attendu, vous pouvez vous appuyer sur la [vidéo](../ressources/videos/app-1.mp4) de la présentation de la réalisation finale de tous les exercices.
 
 ### Scénarios
 
@@ -75,7 +75,7 @@ Et la soumission du formulaire devrait être bloquée.
 **PS** 
 
 - Ici, il faut utiliser l'événement submit sur le bouton de soumission
-- Le message "email et mot de passe obligatoires" doit apparaître au dessus du formulaire.
+- Le message "email et mot de passe obligatoires" doit apparaître au-dessus du formulaire.
 - L'élément parent contenant le message doit avoir la classe CSS `alert alert-danger`.
 
 ---
