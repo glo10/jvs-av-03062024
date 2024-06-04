@@ -31,7 +31,7 @@ export default class Auth {
   }
 
   checkValues (e) {
-    const size =  this.inputs.length
+    const size = this.inputs.length
     e.preventDefault()
     for (let i = 0; i < size; i++) {
       var alertUser = e.target.parentElement.querySelector('.alert.alert-danger')

@@ -1,5 +1,5 @@
 export default class Localization {
-  constructor (endpoint = '../data/location.json') {
+  constructor (endpoint) {
     this.endpoint = endpoint
     this.data = []
   }
@@ -20,26 +20,27 @@ export default class Localization {
     }
   }
 
-  async findCitiesFrom (countryName) {
+  findCitiesFrom (countryName) {
     try {
-      const data = await fetch(this.endpoint)
-      const res = await data.json()
-      const country = res.find(country => country.name === countryName)
-      return country.cities
+      return fetch(this.endpoint)
+        .then(res => res.json())
+        .then((countries) => {
+          const country = countries.find(country => country.name === countryName)
+          return country.cities
+        })
     } catch (error) {
       console.error('error', error)
       return []
     }
   }
 
-  async getData () {
+  getData () {
     try {
-      const data = await fetch(this.endpoint)
-      return data.json()
+      return fetch(this.endpoint)
+        .then(res => res.json())
     } catch (error) {
       console.error('error from getData', error)
       return []
     }
   }
-
 }
