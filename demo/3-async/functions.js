@@ -34,7 +34,7 @@ export function promiseCheckTagHtmlExist (tagHTML) {
   })
 }
 
-export function fetchJSON (url, app) {
+export function fetchJSON (url, app, start, max) {
   fetch(url)
     /**
      * on reçoit une chaine de caractère (texte) au format JSON
@@ -43,7 +43,7 @@ export function fetchJSON (url, app) {
      */
     .then(res => res.json())
     .then(photos => {
-      for (let i = 0; i < 10; i++) {
+      for (let i = start; i < max; i++) {
         const img = document.createElement('img')
         img.src = photos[i].thumbnailUrl
         img.title = photos[i].title

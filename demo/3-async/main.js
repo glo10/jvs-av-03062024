@@ -19,5 +19,5 @@ window.addEventListener('load', () => { // async avec callback anonyme (c'est à
     .catch(error => console.error('error promise all', error)) // si au moins l'un des 2 echouent (même si l'autre retourne le bon résultat)
   renderH1(app, divLoader, 'Asynchrone') // ajout du H1 de manière asynchrone avec setTimeout
   fetchText('./sign-in.html', app)
-  fetchJSON('https://jsonplaceholder.typicode.com/photos', app)
+  fetchJSON('https://jsonplaceholder.typicode.com/photos', app, 100, 120)
 })
