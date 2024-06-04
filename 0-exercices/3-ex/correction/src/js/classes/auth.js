@@ -1,3 +1,4 @@
+// mise en commun de toutes les données et méthodes communes à la connexion et inscription
 export default class Auth {
   constructor () {
     this.inputs = []

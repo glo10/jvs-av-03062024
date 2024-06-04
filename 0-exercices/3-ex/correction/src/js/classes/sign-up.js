@@ -1,4 +1,4 @@
-import Auth from "./auth.js"
+import Auth from './auth.js'
 
 export default class SignUp extends Auth {
   constructor () {

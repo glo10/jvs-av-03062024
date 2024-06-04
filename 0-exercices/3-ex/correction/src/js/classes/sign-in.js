@@ -2,6 +2,7 @@ import Auth from './auth.js'
 
 export default class SignIn extends Auth {
   constructor () {
+    // super() appel le constructeur du parent
     super()
     this.inputs = [
       {
