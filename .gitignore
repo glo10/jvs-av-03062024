@@ -21,6 +21,7 @@ cypress.config.js
 **/demo
 **/ressources/src
 **/correction
-.vscode
+.vscode/*
+!.vscode/launch.json
 **/__tests__
 daily.md
