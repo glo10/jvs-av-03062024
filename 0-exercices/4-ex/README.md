@@ -1,4 +1,4 @@
-# Exercice 4 : switch entre les pages connexion et inscription
+# Exercice 4 : ajout pays et villes page d'inscription
 
 1. Depuis la page d'inscription (sign-up.html), chargez les pays dans la partie du formulaire dédiée (champ de type select) en faisant un appel asynchrone vers le fichier data/countries.json et ajoutez les pays récupérées dans l'élément HTML select dédié.
 2. Toujours depuis la page d'inscription, lorsqu'un pays est séléctionné, récupérez les villes de ce pays depuis le fichier data/cities en faisant un appel asynchrone et ajoutez les villes récupérées dans le select associé.
