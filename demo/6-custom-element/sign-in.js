@@ -4,26 +4,39 @@ export default class SignIn extends HTMLElement {
     this.inputs = 'form input:not([type="submit"]), form select'
     this.submit = '[type=submit]'
     this.innerHTML = `
-    <h1>Connexion</h1>
-    <form autocomplete="off">
-      <div class="my-3">
-        <p class="form-help"></p>
-        <input type="email" class="form-control" name="email" placeholder="email" value="john3@doe.com">
-      </div>
-      <div class="my-3">
-        <p class="form-help"></p>
-        <input type="password" class="form-control" name="password" placeholder="mot de passe" value="johndoe">
-      </div>
-      <div class="my-3 align-right">
-        <input type="submit" value="Valider" class="btn btn-success me-5" data-endpoint="signin">
-        <a class="btn btn-info" href="sign-up.html">Inscription</a>
-      </div>
-    </form>
+      <h1>Connexion</h1>
+      <form autocomplete="off">
+        <div class="my-3">
+          <p class="form-help"></p>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="email"
+            value="john3@doe.com"
+            data-message="Saisissez votre adresse e-mail !"
+          >
+        </div>
+        <div class="my-3">
+          <p class="form-help"></p>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            placeholder="mot de passe"
+            value="johndoe"
+            data-message="Saisissez votre mot de passe !"
+          >
+        </div>
+        <div class="my-3 align-right">
+          <input type="submit" value="Valider" class="btn btn-success me-5" data-endpoint="signin">
+          <a class="btn btn-info" href="sign-up.html">Inscription</a>
+        </div>
+      </form>
     `
   }
 
   connectedCallback () {
-    console.log('dom')
     this.onToggleHelpMessage()
     this.onSubmit()
   }
