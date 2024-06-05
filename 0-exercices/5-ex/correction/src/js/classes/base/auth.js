@@ -1,6 +1,6 @@
 export default class Auth {
   constructor () {
-    this.inputs = this.inputs = 'form input:not([type="submit"]), form select'
+    this.inputs = 'form input:not([type="submit"]), form select'
     this.submit = '[type=submit]'
     this.store = null
   }

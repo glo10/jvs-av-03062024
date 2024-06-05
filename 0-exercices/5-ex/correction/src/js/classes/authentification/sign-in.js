@@ -2,12 +2,8 @@ import Auth from '../base/auth.js'
 
 export default class SignIn extends Auth {
   constructor (store) {
-    super()
+    super() //  appel le constructeur de la classe Auth
     this.store = store
-  }
-
-  events () {
-    super.events()
   }
 
   onSubmit () {
