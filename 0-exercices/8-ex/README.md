@@ -20,14 +20,15 @@
 - Vous devez réagir aux événements *keyup* et *change* pour déclencher la vérification des informations saisies avec votre plugin JQuery vérifiant les formats des données via les expressions régulières.
 - Vous dévez également réagir à l'événement *blur* lors de la perte du focus pour supprimer le message sur le format lorsque ce dernier correspond au format attendu.
 
+**PS: pour simplifier l'exercice et gagner du temps, on ignore volontairement la vérification du mot de passe, pays et ville **
 
 ## Expressions régulières fournies
 
 - Email : `"/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i"`
 - Nom et prénom :  `"/^[a-zA-Z \-]{2,}$/"`
-- Mot de passe : `"/^(?!abcdef|qwerty|azerty|123456)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[&\$+\-*\/#~€%^!-_]).{15,36}\$/"`, entre 15 et 36 caractères, ne commençant pas par abcedef, ni querty, ni azerty, ni 123456, contenant au moins un chiffre, une lettre minuscule, une lettre majuscule et un caractère spécial entre &, $, -, etc.
+<!-- - Mot de passe : `"/^(?!abcdef|qwerty|azerty|123456)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[&\$+\-*\/#~€%^!-_]).{15,36}\$/"`, entre 15 et 36 caractères, ne commençant pas par abcedef, ni querty, ni azerty, ni 123456, contenant au moins un chiffre, une lettre minuscule, une lettre majuscule et un caractère spécial entre &, $, -, etc. -->
 - Pour l'age compris entre 18 et 130 (idéalement, il aura fallu demander la date de naissance puis de faire le calcul avec la date du jour, enfin calculer l'age et vérifier qu'il est compris entre 18 et 130, ici on a simplifié).
-- Pays et Ville différent de *-1* (valeur par défaut qui correspond à l'option "Choisissez ...")
+<!-- - Pays et Ville différent de *-1* (valeur par défaut qui correspond à l'option "Choisissez ...") -->
 
 ---
 
